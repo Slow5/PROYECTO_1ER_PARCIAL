@@ -5,13 +5,35 @@ using PROYECTO.CORE.Services.interfaces;
 namespace PROYECTO.CORE.Services; 
 
 public class FinService : IfinService {
-    public Finance ProcessFin(Income income){
-        var finance = new Finance();
-        float ingreso = 0;
+    float ingreso = 0;
+    float opcion = 0;
+    public float Ingreso => ingreso;
 
-        ingreso = income.money + ingreso;    
-        finance.Index = ingreso; 
-        
-        return finance;
+    public Finance ProcessFin(Income income){
+                 
+        opcion = income.opcion; 
+        var finance = new Finance();
+
+        if(opcion == 1.0){
+
+            ingreso = income.money + ingreso;    
+            finance.Index = ingreso;
+            
+        }else if(opcion == 2.0){
+
+            Console.WriteLine("Tu saldo es " + income.money);
+            
+        }else if(opcion == 3.0){
+            var ingresos = income.money; 
+            var retiro = income.retiro;
+
+            if(ingresos >= retiro){
+                finance.Index = ingresos - retiro;
+            }else{
+                Console.WriteLine("Error");
+            }
+            
+        }
+            return finance;
     }
 }
