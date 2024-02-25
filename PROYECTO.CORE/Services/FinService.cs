@@ -34,7 +34,7 @@ namespace PROYECTO.CORE.Services
                 {
                     ingreso += income.ingreso;
 
-                    // Agregar la transacción 
+                    // Agregar la transacción nueva 
                     transactions.Add(new Transaction
                     {
                         Amount = income.ingreso,
