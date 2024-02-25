@@ -6,5 +6,5 @@ public class Income {
     public float retiro{get; set;}
 
     public string? Category { get; set; } // Nueva propiedad
-    public bool Concept { get; set; }  // Nueva propiedad
+    public string? Concept { get; set; }  // Nueva propiedad
 }

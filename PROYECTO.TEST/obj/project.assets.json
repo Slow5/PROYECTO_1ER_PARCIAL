@@ -5511,26 +5511,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduar\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduar\\Desktop\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\PROYECTO.TEST.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\UNI8\\Tecnologías\\ProyectoP1\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\PROYECTO.TEST.csproj",
       "projectName": "PROYECTO.TEST",
-      "projectPath": "C:\\Users\\eduar\\Desktop\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\PROYECTO.TEST.csproj",
-      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduar\\Desktop\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\UNI8\\Tecnologías\\ProyectoP1\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\PROYECTO.TEST.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\UNI8\\Tecnologías\\ProyectoP1\\PROYECTO_1ER_PARCIAL\\PROYECTO.TEST\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

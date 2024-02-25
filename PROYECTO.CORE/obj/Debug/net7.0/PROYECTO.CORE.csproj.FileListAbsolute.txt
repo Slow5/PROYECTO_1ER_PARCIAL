@@ -9,3 +9,14 @@ C:\Users\eduar\Desktop\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYE
 C:\Users\eduar\Desktop\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\refint\PROYECTO.CORE.dll
 C:\Users\eduar\Desktop\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.pdb
 C:\Users\eduar\Desktop\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\ref\PROYECTO.CORE.dll
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\bin\Debug\net7.0\PROYECTO.CORE.deps.json
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\bin\Debug\net7.0\PROYECTO.CORE.dll
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\bin\Debug\net7.0\PROYECTO.CORE.pdb
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.AssemblyInfoInputs.cache
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.AssemblyInfo.cs
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.dll
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\refint\PROYECTO.CORE.dll
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\PROYECTO.CORE.pdb
+C:\Users\user\Documents\UNI8\Tecnologías\ProyectoP1\PROYECTO_1ER_PARCIAL\PROYECTO.CORE\obj\Debug\net7.0\ref\PROYECTO.CORE.dll

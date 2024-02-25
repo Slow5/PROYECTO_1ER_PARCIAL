@@ -15,7 +15,7 @@ public class FinManager : IfinManager
         return _service.ProcessFin(income);
     }
 
-    // Nuevo método para obtener todas las transacciones
+    
     public List<Transaction> GetAll()
     {
         return _service.GetAllTransactions();
