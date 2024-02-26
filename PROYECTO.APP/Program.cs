@@ -13,6 +13,7 @@ public static class Program
         float ingreso = 0;
         float opcion = 0;
         bool continuar = true;
+        bool conitnuar2 = true;
         bool valor = false;
 
 
@@ -21,9 +22,9 @@ public static class Program
 
         while (continuar)
         {
-            Console.WriteLine("=====❤✿ Menu ✿❤===== ");
+            Console.WriteLine("=====❤ ✿ Menu ✿ ❤===== ");
             Console.WriteLine("[1] Realizar transacción");
-            Console.WriteLine("[2] Estado Financiero");
+            Console.WriteLine("[2] Estado financiero");
             Console.WriteLine("[3] Establecer una meta");
             Console.WriteLine("[4] salir");
             Console.Write("Opcion (1-4): ");
@@ -31,31 +32,43 @@ public static class Program
 
             if (opcion == 1.0f)
             {
+                int category;
                 Console.Write("Ingresa la cantidad: ");
                 Single.TryParse(Console.ReadLine(), out float amount);
 
-                Console.WriteLine("Ingresa el número de la categoría: ");
-                Console.WriteLine("[1]Entretenimiento");
-                Console.WriteLine("[2]Alimentación");
-                Console.WriteLine("[3]Transporte");
-                Console.WriteLine("[4]Vivienda");
-                Console.WriteLine("[5]Otro");
-                int category = int.Parse(Console.ReadLine());
+                do
+                {
+                    Console.WriteLine("Ingresa el número de la categoría: ");
+                    Console.WriteLine("[1] Entretenimiento");
+                    Console.WriteLine("[2] Alimentación");
+                    Console.WriteLine("[3] Transporte");
+                    Console.WriteLine("[4] Vivienda");
+                    Console.WriteLine("[5] Otro");
+
+                    category = int.Parse(Console.ReadLine());
+                } while (category > 5);
                 string categoryIn = "";
 
-                if(category == 1){
+                if (category == 1)
+                {
                     categoryIn = "Entretenimiento";
-                }else if(category == 2){
+                }
+                else if (category == 2)
+                {
                     categoryIn = "Alimentación";
-                }else if(category == 3){
+                }
+                else if (category == 3)
+                {
                     categoryIn = "Transporte";
-                }else if(category == 4){
+                }
+                else if (category == 4)
+                {
                     categoryIn = "Vivienda";
-                }else if(category == 5){
-                    categoryIn = "Otro";
+                }
+                else if (category == 5)
+                {
                     Console.WriteLine("Ingresa la categoria: ");
                     categoryIn = Console.ReadLine();
-
                 }
 
 
@@ -80,14 +93,14 @@ public static class Program
 
                     var finance = managers.GetFinance(transaction);
                     ingreso = finance.Index;
-                    
+
                     Console.WriteLine(concept.Equals("Gasto") ? "CANTIDAD RETIRADA CON ÉXITO" : "CANTIDAD INGRESADA CON ÉXITO");
                     Console.WriteLine("Saldo actual: " + ingreso);
                 }
             }
             else if (opcion == 2.0f)
             {
-                Console.WriteLine("=====❤✿ Transacciones ✿❤=====");
+                Console.WriteLine("=====❤ ✿ Transacciones ✿ ❤=====");
                 foreach (var trans in managers.GetAll())
                 {
                     Console.WriteLine($"Cantidad: {trans.Amount}, Categoría: {trans.Category}, Concepto: {trans.Concept}");
@@ -109,8 +122,8 @@ public static class Program
             }
         }
     }
-
 }
+
 
 
 

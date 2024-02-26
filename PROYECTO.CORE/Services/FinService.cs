@@ -43,12 +43,14 @@ namespace PROYECTO.CORE.Services
                     });
 
                     finance.Index = ingreso;
-//&& !metaAlcanzada
-                    if (ingreso >= meta)
+                    //&& !metaAlcanzada
+
+                    if (meta > 0 && ingreso >= meta)
                     {
                         Console.WriteLine($"¡Felicidades Has alcanzado tu meta de {meta}!");
                         metaAlcanzada = true;
                     }
+
                 }
                 else if (concepto.Equals("Gasto"))
                 {
