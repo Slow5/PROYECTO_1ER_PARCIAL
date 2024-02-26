@@ -43,8 +43,8 @@ namespace PROYECTO.CORE.Services
                     });
 
                     finance.Index = ingreso;
-
-                    if (ingreso >= meta && !metaAlcanzada)
+//&& !metaAlcanzada
+                    if (ingreso >= meta)
                     {
                         Console.WriteLine($"¡Felicidades Has alcanzado tu meta de {meta}!");
                         metaAlcanzada = true;

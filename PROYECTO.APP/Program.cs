@@ -21,11 +21,11 @@ public static class Program
 
         while (continuar)
         {
-            Console.WriteLine("Opciones: ");
-            Console.WriteLine("1- Realizar transacción");
-            Console.WriteLine("2- Estado Financiero");
-            Console.WriteLine("3- Establecer una meta");
-            Console.WriteLine("4- salir");
+            Console.WriteLine("=====❤✿ Menu ✿❤===== ");
+            Console.WriteLine("[1] Realizar transacción");
+            Console.WriteLine("[2] Estado Financiero");
+            Console.WriteLine("[3] Establecer una meta");
+            Console.WriteLine("[4] salir");
             Console.Write("Opcion (1-4): ");
             Single.TryParse(Console.ReadLine(), out opcion);
 
@@ -34,16 +34,37 @@ public static class Program
                 Console.Write("Ingresa la cantidad: ");
                 Single.TryParse(Console.ReadLine(), out float amount);
 
-                Console.Write("Ingresa la categoría: ");
-                string category = Console.ReadLine();
+                Console.WriteLine("Ingresa el número de la categoría: ");
+                Console.WriteLine("[1]Entretenimiento");
+                Console.WriteLine("[2]Alimentación");
+                Console.WriteLine("[3]Transporte");
+                Console.WriteLine("[4]Vivienda");
+                Console.WriteLine("[5]Otro");
+                int category = int.Parse(Console.ReadLine());
+                string categoryIn = "";
+
+                if(category == 1){
+                    categoryIn = "Entretenimiento";
+                }else if(category == 2){
+                    categoryIn = "Alimentación";
+                }else if(category == 3){
+                    categoryIn = "Transporte";
+                }else if(category == 4){
+                    categoryIn = "Vivienda";
+                }else if(category == 5){
+                    categoryIn = "Otro";
+                    Console.WriteLine("Ingresa la categoria: ");
+                    categoryIn = Console.ReadLine();
+
+                }
+
 
                 Console.Write("Ingresa el concepto (Gasto/Ingreso): ");
                 string concept = Console.ReadLine();
 
-
                 if (concept.Equals("Gasto") && amount > ingreso)
                 {
-                    Console.WriteLine("! NO TIENES SUFICIENTES FONDOS PARA REALIZAR LA TRANSACCIÓN");
+                    Console.WriteLine("¡NO TIENES SUFICIENTES FONDOS PARA REALIZAR LA TRANSACCIÓN!");
                     Console.WriteLine("Saldo actual: " + ingreso);
                 }
                 else
@@ -53,19 +74,20 @@ public static class Program
                     {
                         ingreso = amount,
                         opcion = 1.0f,
-                        Category = category,
+                        Category = categoryIn,
                         Concept = concept
                     };
 
                     var finance = managers.GetFinance(transaction);
                     ingreso = finance.Index;
-
+                    
                     Console.WriteLine(concept.Equals("Gasto") ? "CANTIDAD RETIRADA CON ÉXITO" : "CANTIDAD INGRESADA CON ÉXITO");
                     Console.WriteLine("Saldo actual: " + ingreso);
                 }
             }
             else if (opcion == 2.0f)
             {
+                Console.WriteLine("=====❤✿ Transacciones ✿❤=====");
                 foreach (var trans in managers.GetAll())
                 {
                     Console.WriteLine($"Cantidad: {trans.Amount}, Categoría: {trans.Category}, Concepto: {trans.Concept}");
