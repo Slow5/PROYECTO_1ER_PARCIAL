@@ -10,11 +10,11 @@ namespace PROYECTO.CORE.Services
     public class FinService : IfinService
     {
 
-        private float meta;
-        private float presupuesto;
-        private bool metaAlcanzada = false;
-        private static List<Transaction> transactions = new List<Transaction>();
-        private float ingreso = 0;
+        public float meta;
+        public float presupuesto;
+        public bool metaAlcanzada = false;
+        public static List<Transaction> transactions = new List<Transaction>();
+        public float ingreso = 0;
 
 
 

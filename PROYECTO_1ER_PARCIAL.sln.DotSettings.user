@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=233e50c2_002D3394_002D4de2_002D984e_002Dadb16f9e36e5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ProcessFin_OpcionGasto_DisminuyeIngresoYAgregaTransaccion" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FE265E96-28C8-4FBA-B206-B3A6C660EF10::net7.0::PROYECTO.TEST.ServiceTest.ProcessFin_OpcionGasto_DisminuyeIngresoYAgregaTransaccion&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9b161c6c_002D5d1c_002D4029_002Da553_002D8177dc6a18c3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EstablecerMeta_EstableceMetaCorrectamente" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FE265E96-28C8-4FBA-B206-B3A6C660EF10::net7.0::PROYECTO.TEST.GlobalTest.EstablecerMeta_EstableceMetaCorrectamente&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e97a3b00_002De0da_002D49ed_002D8186_002Dc5a150212ddb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EstablecerMeta_EstableceMetaCorrectamente #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FE265E96-28C8-4FBA-B206-B3A6C660EF10::net7.0::PROYECTO.TEST.ServiceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
