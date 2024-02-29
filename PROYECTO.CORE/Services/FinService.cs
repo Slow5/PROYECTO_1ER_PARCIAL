@@ -11,6 +11,7 @@ namespace PROYECTO.CORE.Services
     {
 
         private float meta;
+        private float presupuesto;
         private bool metaAlcanzada = false;
         private static List<Transaction> transactions = new List<Transaction>();
         private float ingreso = 0;
@@ -20,6 +21,10 @@ namespace PROYECTO.CORE.Services
         public void EstablecerMeta(float nuevaMeta)
         {
             meta = nuevaMeta;
+        }
+        public void EstablecerPresupuesto(float nuevoPresupuesto)
+        {
+            presupuesto = nuevoPresupuesto;
         }
 
         public Finance ProcessFin(Income income)
@@ -66,6 +71,13 @@ namespace PROYECTO.CORE.Services
                             Category = income.Category,
                             Concept = income.Concept,
                         });
+
+
+                        if (ingreso < presupuesto)
+                        {
+                            double porcentaje = ((ingreso * 100) / presupuesto);
+                            Console.WriteLine($"El límite de tu presupuesto está al % {porcentaje}");
+                        }
 
                         finance.Index = ingreso;
                     }

@@ -26,8 +26,9 @@ public static class Program
             Console.WriteLine("[1] Realizar transacción");
             Console.WriteLine("[2] Estado financiero");
             Console.WriteLine("[3] Establecer una meta");
-            Console.WriteLine("[4] salir");
-            Console.Write("Opcion (1-4): ");
+            Console.WriteLine("[4] Establecer presupuesto");
+            Console.WriteLine("[5] salir");
+            Console.Write("Opcion (1-5): ");
             Single.TryParse(Console.ReadLine(), out opcion);
 
             if (opcion == 1.0f)
@@ -72,7 +73,7 @@ public static class Program
                 }
 
 
-                Console.Write("Ingresa el concepto (Gasto/Ingreso): ");
+                Console.Write("Escribe el concepto (Gasto/Ingreso): ");
                 string concept = Console.ReadLine();
 
                 if (concept.Equals("Gasto") && amount > ingreso)
@@ -113,6 +114,12 @@ public static class Program
                 service.EstablecerMeta(nuevaMeta);
             }
             else if (opcion == 4.0f)
+            {
+                Console.Write("Ingresa la cantidad de tu presupuesto: ");
+                float nuevoPresupuesto = float.Parse(Console.ReadLine());
+                service.EstablecerPresupuesto(nuevoPresupuesto);
+            }
+            else if (opcion == 5.0f)
             {
                 continuar = false;
             }
